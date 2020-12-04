@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VbH-Rm-UWR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Heroes-->
+        <scene sceneID="UtG-KW-4PE">
+            <objects>
+                <viewController id="0gy-Zl-3Sk" customClass="HeroVC" customModule="Fundamentos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yLD-Ji-M9F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HMA-14-PXH">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K3o-Wy-Jhd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K3o-Wy-Jhd" firstAttribute="trailing" secondItem="HMA-14-PXH" secondAttribute="trailing" id="9GE-mn-SJW"/>
+                            <constraint firstItem="HMA-14-PXH" firstAttribute="leading" secondItem="K3o-Wy-Jhd" secondAttribute="leading" id="9uR-oA-4cb"/>
+                            <constraint firstItem="HMA-14-PXH" firstAttribute="top" secondItem="K3o-Wy-Jhd" secondAttribute="top" id="QIt-Bn-hSv"/>
+                            <constraint firstItem="K3o-Wy-Jhd" firstAttribute="bottom" secondItem="HMA-14-PXH" secondAttribute="bottom" id="WVu-iG-MyW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Heroes" id="PLc-rC-Gsr"/>
+                    <connections>
+                        <outlet property="tableView" destination="HMA-14-PXH" id="vre-Xk-BQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAe-gb-eVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215.9420289855072" y="-145.3125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c2L-Ne-O9c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VbH-Rm-UWR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_batman" id="Jkd-6w-rdd">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZJV-FL-2Zm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0gy-Zl-3Sk" kind="relationship" relationship="rootViewController" id="sCF-MP-YD4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crv-Ev-rRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305.79710144927537" y="-145.3125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_batman" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
