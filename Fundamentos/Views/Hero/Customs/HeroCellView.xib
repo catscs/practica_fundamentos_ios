@@ -16,14 +16,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="459" height="211"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="EJO-yT-4bI">
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="EJO-yT-4bI">
                         <rect key="frame" x="10" y="10" width="439" height="191"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iV6-UN-3XD">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="191"/>
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="191"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKG-Sw-m4d">
-                                        <rect key="frame" x="0.0" y="20" width="319" height="151"/>
+                                        <rect key="frame" x="0.0" y="20" width="314" height="151"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
                                 </subviews>
@@ -56,6 +56,9 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="rxp-oQ-djU" firstAttribute="leading" secondItem="iV6-UN-3XD" secondAttribute="trailing" id="CyM-RZ-siQ"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>

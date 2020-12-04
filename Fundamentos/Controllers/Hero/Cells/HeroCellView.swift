@@ -36,6 +36,7 @@ class HeroCellView: UITableViewCell {
     func bind(hero: Hero) {
         heroImage.image = UIImage(named: hero.image+"_transparent")
         heroImage.backgroundColor = hero.color
+        viewText.backgroundColor = hero.color
     }
     
 }
