@@ -12,9 +12,24 @@ typealias Heores = [Hero]
 class Hero: Character {
     enum Attack {
         case sword, arch, dagger
+        func get() -> String {
+            switch self {
+                case .sword:
+                    return Constants.sword
+                case .arch:
+                    return Constants.arch
+                case .dagger:
+                    return Constants.dagger
+            }
+        }
     }
+    
     var color: UIColor
     var attack: Attack
+    
+    var stringAttack: String {
+        return attack.get()
+    }
     
     init(image: String, name: String, description: String, color: UIColor, attack: Attack) {
         self.color = color

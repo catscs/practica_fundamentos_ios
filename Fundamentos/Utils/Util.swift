@@ -14,4 +14,5 @@ class Util {
     static func getColorRandom() -> UIColor {
         return Util.colors[Int.random(in: 0..<colors.count)] ?? .black
     }
+
 }

@@ -25,17 +25,16 @@ class HeroCellView: UITableViewCell {
         
         viewText.layer.cornerRadius = 40
         viewText.clipsToBounds = true
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
         
         nameLabel.text = ""
         attackLabel.text = ""
         heroImage.image = nil
         heroImage.backgroundColor = .white
         viewText.backgroundColor = .white
-      
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
     }
     
     
@@ -44,16 +43,7 @@ class HeroCellView: UITableViewCell {
         heroImage.backgroundColor = hero.color
         viewText.backgroundColor = hero.color
         nameLabel.text = hero.name
-        var attack = ""
-        switch hero.attack {
-            case .sword:
-                attack = Constants.sword
-            case .arch:
-                attack = Constants.arch
-            case .dagger:
-                attack = Constants.dagger
-        }
-        attackLabel.text = attack
+        attackLabel.text = hero.stringAttack
     }
     
 }

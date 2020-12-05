@@ -15,14 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="MH2-Jr-MEl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PYo-cA-nLA">
+                                <rect key="frame" x="10" y="150" width="394" height="712"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rti-4k-Xx7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JSk-GM-LiP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JSk-GM-LiP" firstAttribute="trailing" secondItem="PYo-cA-nLA" secondAttribute="trailing" constant="10" id="5uJ-wU-wtj"/>
+                            <constraint firstItem="JSk-GM-LiP" firstAttribute="bottom" secondItem="PYo-cA-nLA" secondAttribute="bottom" id="RbL-bc-IdT"/>
+                            <constraint firstItem="PYo-cA-nLA" firstAttribute="leading" secondItem="JSk-GM-LiP" secondAttribute="leading" constant="10" id="dhj-36-GVP"/>
+                            <constraint firstItem="PYo-cA-nLA" firstAttribute="top" secondItem="JSk-GM-LiP" secondAttribute="top" constant="10" id="fKf-4U-g8g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Villanos" id="fxb-7i-lDy"/>
+                    <connections>
+                        <outlet property="collectionView" destination="PYo-cA-nLA" id="vD2-E7-uTX"/>
+                        <segue destination="526-tL-KYL" kind="show" identifier="VILLAIN_TO_DETAIL" id="J7I-a2-mK6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaV-of-2ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="513.61607142857144"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="uwS-e6-hoJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="526-tL-KYL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BPi-S7-SCN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMy-P8-aVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968" y="514"/>
         </scene>
         <!--Villanos-->
         <scene sceneID="YL0-yX-hLx">
@@ -33,6 +66,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GXp-pn-Gko">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

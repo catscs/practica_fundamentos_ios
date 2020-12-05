@@ -9,9 +9,17 @@ import Foundation
 
 
 class CharacterManager {
+    private var characterDelegate: CharacterDelegate
+    
+    init() {
+        characterDelegate = CharacterFactory.create()
+    }
     
     func getHeroes() -> Heores {
-        let characterDelegate: CharacterDelegate = CharacterFactory.create()
         return characterDelegate.getHeroes()
+    }
+    
+    func getVillains() -> Villains {
+        return characterDelegate.getVillains()
     }
 }

@@ -29,7 +29,7 @@ class HeroVC: UIViewController {
     
     func configureTableView() {
         
-        tableView.register(UINib(nibName: Constants.friendCellView, bundle: nil), forCellReuseIdentifier: Constants.frienCellViewIdentifier)
+        tableView.register(UINib(nibName: Constants.heroCellView, bundle: nil), forCellReuseIdentifier: Constants.heroCellViewIdentifier)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
@@ -56,7 +56,7 @@ extension HeroVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.frienCellViewIdentifier, for: indexPath) as? HeroCellView
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.heroCellViewIdentifier, for: indexPath) as? HeroCellView
         if indexPath.row < heroes.count {
             cell?.bind(hero: heroes[indexPath.row])
         }

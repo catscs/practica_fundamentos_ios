@@ -10,4 +10,5 @@ import Foundation
 
 protocol CharacterDelegate {
     func getHeroes() -> Heores
+    func getVillains() -> Villains
 }

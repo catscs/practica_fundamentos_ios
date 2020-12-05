@@ -11,6 +11,8 @@
 		AA9BCF83257B8D7200536810 /* CharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BCF82257B8D7200536810 /* CharacterFactory.swift */; };
 		AA9BCF87257B8E0200536810 /* CharacterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BCF86257B8E0200536810 /* CharacterManager.swift */; };
 		AA9BCF8D257BA78000536810 /* DetailTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BCF8C257BA78000536810 /* DetailTV.swift */; };
+		AA9BCF95257BCE6000536810 /* VillainCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9BCF94257BCE6000536810 /* VillainCellView.xib */; };
+		AA9BCF99257BCEB700536810 /* VillainCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BCF98257BCEB700536810 /* VillainCellView.swift */; };
 		AAFDEC0A257A3C0700B0C5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC09257A3C0700B0C5AE /* AppDelegate.swift */; };
 		AAFDEC0C257A3C0700B0C5AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC0B257A3C0700B0C5AE /* SceneDelegate.swift */; };
 		AAFDEC0E257A3C0700B0C5AE /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC0D257A3C0700B0C5AE /* SplashVC.swift */; };
@@ -39,6 +41,8 @@
 		AA9BCF82257B8D7200536810 /* CharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFactory.swift; sourceTree = "<group>"; };
 		AA9BCF86257B8E0200536810 /* CharacterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManager.swift; sourceTree = "<group>"; };
 		AA9BCF8C257BA78000536810 /* DetailTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTV.swift; sourceTree = "<group>"; };
+		AA9BCF94257BCE6000536810 /* VillainCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VillainCellView.xib; sourceTree = "<group>"; };
+		AA9BCF98257BCEB700536810 /* VillainCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainCellView.swift; sourceTree = "<group>"; };
 		AAFDEC06257A3C0700B0C5AE /* Fundamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFDEC09257A3C0700B0C5AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFDEC0B257A3C0700B0C5AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA9BCF93257BCE3B00536810 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA9BCF98257BCEB700536810 /* VillainCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA9BCF97257BCE9000536810 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				AA9BCF94257BCE6000536810 /* VillainCellView.xib */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
 		AAFDEBFD257A3C0700B0C5AE = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +223,7 @@
 		AAFDEC49257A7AAF00B0C5AE /* Villain */ = {
 			isa = PBXGroup;
 			children = (
+				AA9BCF97257BCE9000536810 /* Customs */,
 				AAFDEC57257A836B00B0C5AE /* Villain.storyboard */,
 			);
 			path = Villain;
@@ -211,6 +232,7 @@
 		AAFDEC4A257A7AB600B0C5AE /* Villain */ = {
 			isa = PBXGroup;
 			children = (
+				AA9BCF93257BCE3B00536810 /* Cells */,
 				AAFDEC4B257A7AC200B0C5AE /* VillainVC.swift */,
 			);
 			path = Villain;
@@ -329,6 +351,7 @@
 				AAFDEC16257A3C0800B0C5AE /* LaunchScreen.storyboard in Resources */,
 				AAFDEC13257A3C0800B0C5AE /* Assets.xcassets in Resources */,
 				AAFDEC6F257B001100B0C5AE /* Detail.storyboard in Resources */,
+				AA9BCF95257BCE6000536810 /* VillainCellView.xib in Resources */,
 				AAFDEC5D257AA5BA00B0C5AE /* HeroCellView.xib in Resources */,
 				AAFDEC55257A834C00B0C5AE /* Hero.storyboard in Resources */,
 				AAFDEC11257A3C0700B0C5AE /* Main.storyboard in Resources */,
@@ -359,6 +382,7 @@
 				AAFDEC34257A681200B0C5AE /* Constants.swift in Sources */,
 				AA9BCF7F257B8CDB00536810 /* CharacterDelegate.swift in Sources */,
 				AAFDEC0C257A3C0700B0C5AE /* SceneDelegate.swift in Sources */,
+				AA9BCF99257BCEB700536810 /* VillainCellView.swift in Sources */,
 				AAFDEC31257A45DB00B0C5AE /* Villain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
