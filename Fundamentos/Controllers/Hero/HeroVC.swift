@@ -17,7 +17,7 @@ class HeroVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        heroes = Repository.getHero()
+        heroes = CharacterManager().getHeroes()
         configureTableView()
         
     }
@@ -41,6 +41,7 @@ class HeroVC: UIViewController {
         }
         
         destination.character = hero
+        destination.color = hero.color
     }
 }
 

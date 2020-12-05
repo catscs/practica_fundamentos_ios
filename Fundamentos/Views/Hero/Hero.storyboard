@@ -40,11 +40,11 @@
             </objects>
             <point key="canvasLocation" x="1215.9420289855072" y="-145.3125"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Heroes-->
         <scene sceneID="c2L-Ne-O9c">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VbH-Rm-UWR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_batman" id="Jkd-6w-rdd">
+                    <tabBarItem key="tabBarItem" title="Heroes" image="icon_batman" id="Jkd-6w-rdd">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>

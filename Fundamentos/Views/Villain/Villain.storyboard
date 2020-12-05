@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="513.61607142857144"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Villanos-->
         <scene sceneID="YL0-yX-hLx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ake-xn-nYO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_evil" id="B78-Bl-1FW"/>
+                    <tabBarItem key="tabBarItem" title="Villanos" image="icon_evil" id="B78-Bl-1FW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GXp-pn-Gko">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>

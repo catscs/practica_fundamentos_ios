@@ -40,18 +40,18 @@ class HeroCellView: UITableViewCell {
     
     
     func bind(hero: Hero) {
-        heroImage.image = UIImage(named: hero.image+"_transparent")
+        heroImage.image = UIImage(named: "\(hero.image)\(Constants.imageTransparent)")
         heroImage.backgroundColor = hero.color
         viewText.backgroundColor = hero.color
         nameLabel.text = hero.name
         var attack = ""
         switch hero.attack {
             case .sword:
-                attack = "Espada"
+                attack = Constants.sword
             case .arch:
-                attack = "Arco"
+                attack = Constants.arch
             case .dagger:
-                attack = "Daga"
+                attack = Constants.dagger
         }
         attackLabel.text = attack
     }

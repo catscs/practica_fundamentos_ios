@@ -17,7 +17,11 @@ struct Constants {
     
     // Hero
     static let friendCellView = "HeroCellView"
+    static let imageTransparent = "_transparent"
     static let frienCellViewIdentifier = "HeroCellView"
     static let heightTableHero = 95
     static let vavigationHeroToDetal = "HERO_TO_DETAIL"
+    static let sword = "Espada"
+    static let arch = "Arco"
+    static let dagger = "Daga"
 }

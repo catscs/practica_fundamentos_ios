@@ -8,9 +8,9 @@
 import UIKit
 
 
-class Repository {
+class LocalRepository: CharacterDelegate {
     
-    static func getHero() -> Heores {
+    func getHeroes() -> Heores {
         return [
             Hero(image: "hero1", name: "Hero1", description: "Descripción del hero1", color: UIColor(named: "cblue") ?? .blue, attack: .arch),
             Hero(image: "hero2", name: "Hero2", description: "Descripción del hero1", color: UIColor(named: "cgreen") ?? .green, attack: .dagger),

@@ -11,13 +11,23 @@ import UIKit
 class DetailVC: UIViewController {
     
     var character: Character? = nil
-    
-    @IBOutlet weak var image: UIImageView!
+    var color: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        image.image = UIImage(named: character?.image ?? "")
+        let tableVC = self.children[0] as? DetailTV
+        tableVC?.character = character
+        
+        configurateNavigation()
         
     }
+    
+    private func configurateNavigation() {
+        navigationItem.largeTitleDisplayMode = .never
+        navigationController?.navigationBar.barTintColor = color ?? .black
+        navigationItem.title = character?.name
+        navigationController?.navigationBar.tintColor = .white
+    }
 }
+
