@@ -29,4 +29,6 @@ struct Constants {
     static let villainCellView = "VillainCellView"
     static let villainCellViewIdentifier = "VillainCellView"
     static let navigationVillainToDetail = "VILLAIN_TO_DETAIL"
+    static let widthCollectionView = 100
+    static let heightCollectionView = 150
 }

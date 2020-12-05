@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PYo-cA-nLA">
-                                <rect key="frame" x="10" y="150" width="394" height="712"/>
+                                <rect key="frame" x="10" y="140" width="394" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rti-4k-Xx7">
                                     <size key="itemSize" width="128" height="128"/>
@@ -34,7 +34,7 @@
                             <constraint firstItem="JSk-GM-LiP" firstAttribute="trailing" secondItem="PYo-cA-nLA" secondAttribute="trailing" constant="10" id="5uJ-wU-wtj"/>
                             <constraint firstItem="JSk-GM-LiP" firstAttribute="bottom" secondItem="PYo-cA-nLA" secondAttribute="bottom" id="RbL-bc-IdT"/>
                             <constraint firstItem="PYo-cA-nLA" firstAttribute="leading" secondItem="JSk-GM-LiP" secondAttribute="leading" constant="10" id="dhj-36-GVP"/>
-                            <constraint firstItem="PYo-cA-nLA" firstAttribute="top" secondItem="JSk-GM-LiP" secondAttribute="top" constant="10" id="fKf-4U-g8g"/>
+                            <constraint firstItem="PYo-cA-nLA" firstAttribute="top" secondItem="JSk-GM-LiP" secondAttribute="top" id="fKf-4U-g8g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Villanos" id="fxb-7i-lDy"/>

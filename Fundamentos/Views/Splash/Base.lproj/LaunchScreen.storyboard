@@ -16,17 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="1Y6-EI-bkU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OD-Ck-XbB">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiderman" translatesAutoresizingMaskIntoConstraints="NO" id="eFw-id-dyc">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="1ci-OA-SiQ"/>
+                                            <constraint firstAttribute="width" constant="300" id="akT-or-eFA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eFw-id-dyc" secondAttribute="trailing" id="Cza-hh-V9J"/>
+                                    <constraint firstAttribute="height" constant="300" id="EMi-nm-Q9z"/>
+                                    <constraint firstItem="eFw-id-dyc" firstAttribute="top" secondItem="1OD-Ck-XbB" secondAttribute="top" id="LEz-mK-kNy"/>
+                                    <constraint firstAttribute="width" constant="300" id="Snb-ln-Cmt"/>
+                                    <constraint firstItem="eFw-id-dyc" firstAttribute="leading" secondItem="1OD-Ck-XbB" secondAttribute="leading" id="bF7-YA-kYN"/>
+                                    <constraint firstAttribute="bottom" secondItem="eFw-id-dyc" secondAttribute="bottom" id="sr6-wh-F6T"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Y6-EI-bkU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FqW-Zd-EUZ"/>
-                            <constraint firstItem="1Y6-EI-bkU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IcV-gU-UgU"/>
-                            <constraint firstItem="1Y6-EI-bkU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kkU-yp-rgy"/>
-                            <constraint firstAttribute="bottom" secondItem="1Y6-EI-bkU" secondAttribute="bottom" id="wcj-P4-x8r"/>
+                            <constraint firstItem="1OD-Ck-XbB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5yW-ev-RGi"/>
+                            <constraint firstItem="1OD-Ck-XbB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="781-qX-luH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,7 +52,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fondo" width="180" height="320"/>
+        <image name="spiderman" width="172.33332824707031" height="213.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -17,7 +17,7 @@ class VillainCellView: UICollectionViewCell {
         super.awakeFromNib()
         
         villainImage.layer.cornerRadius = villainImage.frame.size.width / 2
-        villainImage.layer.borderWidth = 2
+        villainImage.layer.borderWidth = 3
         villainImage.layer.borderColor = UIColor.black.cgColor
         villainImage.clipsToBounds = true
         

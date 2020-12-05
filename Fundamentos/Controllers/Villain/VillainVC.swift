@@ -24,7 +24,7 @@ class VillainVC: UIViewController {
         
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 120, height: 180)
+        layout.itemSize = CGSize(width: Constants.widthCollectionView, height: Constants.heightCollectionView)
         collectionView.collectionViewLayout = layout
     }
     
@@ -64,6 +64,6 @@ extension VillainVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 120, height: 180)
+        return CGSize(width: Constants.widthCollectionView, height: Constants.heightCollectionView)
     }
 }

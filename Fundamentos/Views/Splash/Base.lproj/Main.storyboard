@@ -16,24 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-6V-8cg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-wL-gTn">
-                                <rect key="frame" x="197" y="251" width="20" height="37"/>
-                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DD-FX-xGP">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiderman" translatesAutoresizingMaskIntoConstraints="NO" id="ArI-zb-6aR">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="Idd-hL-IUd"/>
+                                            <constraint firstAttribute="width" constant="300" id="vdv-B0-s4r"/>
+                                        </constraints>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gRY-5C-yRE">
+                                        <rect key="frame" x="131.5" y="227" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ArI-zb-6aR" firstAttribute="top" secondItem="3DD-FX-xGP" secondAttribute="top" id="2OS-j1-y8V"/>
+                                    <constraint firstAttribute="width" constant="300" id="5FP-Og-4mc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ArI-zb-6aR" secondAttribute="trailing" id="BJj-0b-9Qd"/>
+                                    <constraint firstItem="ArI-zb-6aR" firstAttribute="leading" secondItem="3DD-FX-xGP" secondAttribute="leading" id="EQu-wi-RvZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ArI-zb-6aR" secondAttribute="trailing" id="PPw-ga-x5Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="ArI-zb-6aR" secondAttribute="bottom" id="TQ5-RT-MJi"/>
+                                    <constraint firstItem="ArI-zb-6aR" firstAttribute="top" secondItem="3DD-FX-xGP" secondAttribute="top" id="YRR-9B-FtC"/>
+                                    <constraint firstItem="gRY-5C-yRE" firstAttribute="centerX" secondItem="3DD-FX-xGP" secondAttribute="centerX" id="lpT-QG-oyx"/>
+                                    <constraint firstItem="ArI-zb-6aR" firstAttribute="leading" secondItem="3DD-FX-xGP" secondAttribute="leading" id="ntB-qO-N2V"/>
+                                    <constraint firstAttribute="height" constant="300" id="q6u-Lh-8Iu"/>
+                                    <constraint firstAttribute="bottom" secondItem="gRY-5C-yRE" secondAttribute="bottom" constant="36" id="sU9-np-Rc1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ArI-zb-6aR" secondAttribute="bottom" id="yKi-1L-sfV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MYH-6V-8cg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="13d-eY-Rsm"/>
-                            <constraint firstAttribute="bottom" secondItem="MYH-6V-8cg" secondAttribute="bottom" id="GKj-yB-15p"/>
-                            <constraint firstItem="FSa-wL-gTn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="JEd-5c-vWb"/>
-                            <constraint firstItem="MYH-6V-8cg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KRj-tb-gCC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FSa-wL-gTn" secondAttribute="trailing" constant="197" id="QJH-bH-DDI"/>
-                            <constraint firstItem="FSa-wL-gTn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="Vli-WX-sHy"/>
-                            <constraint firstItem="MYH-6V-8cg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b80-wy-eDM"/>
+                            <constraint firstItem="3DD-FX-xGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EiW-8X-DiC"/>
+                            <constraint firstItem="3DD-FX-xGP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nok-dI-TZQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jhe-ed-N1F"/>
@@ -43,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="138"/>
+            <point key="canvasLocation" x="911.59420289855075" y="137.94642857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="iEX-I5-X6W">
@@ -76,7 +95,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fondo" width="180" height="320"/>
+        <image name="spiderman" width="172.33332824707031" height="213.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
