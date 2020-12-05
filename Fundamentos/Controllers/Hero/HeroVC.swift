@@ -22,11 +22,25 @@ class HeroVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barTintColor = Util.getColorRandom()
+    }
+    
     func configureTableView() {
         
         tableView.register(UINib(nibName: Constants.friendCellView, bundle: nil), forCellReuseIdentifier: Constants.frienCellViewIdentifier)
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailVC, let hero = sender as? Hero else {
+            return
+        }
+        
+        destination.character = hero
     }
 }
 
@@ -37,7 +51,7 @@ extension HeroVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140.0
+        return CGFloat(Constants.heightTableHero)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,6 +60,12 @@ extension HeroVC: UITableViewDelegate, UITableViewDataSource {
             cell?.bind(hero: heroes[indexPath.row])
         }
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row < heroes.count {
+            performSegue(withIdentifier: Constants.vavigationHeroToDetal, sender: heroes[indexPath.row])
+        }
     }
     
     

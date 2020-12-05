@@ -33,6 +33,7 @@
                     <navigationItem key="navigationItem" title="Heroes" id="PLc-rC-Gsr"/>
                     <connections>
                         <outlet property="tableView" destination="HMA-14-PXH" id="vre-Xk-BQj"/>
+                        <segue destination="mzG-Wu-k6i" kind="show" identifier="HERO_TO_DETAIL" id="R4X-gI-5Ck"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAe-gb-eVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -50,6 +51,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZJV-FL-2Zm">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -59,6 +63,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crv-Ev-rRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305.79710144927537" y="-145.3125"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="2gB-99-SRo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="mzG-Wu-k6i" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="02p-lR-pcs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5p-Lx-HNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="-145"/>
         </scene>
     </scenes>
     <resources>

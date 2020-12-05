@@ -13,7 +13,7 @@
 		AAFDEC11257A3C0700B0C5AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFDEC0F257A3C0700B0C5AE /* Main.storyboard */; };
 		AAFDEC13257A3C0800B0C5AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFDEC12257A3C0800B0C5AE /* Assets.xcassets */; };
 		AAFDEC16257A3C0800B0C5AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFDEC14257A3C0800B0C5AE /* LaunchScreen.storyboard */; };
-		AAFDEC2B257A45C600B0C5AE /* Personaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC2A257A45C600B0C5AE /* Personaje.swift */; };
+		AAFDEC2B257A45C600B0C5AE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC2A257A45C600B0C5AE /* Character.swift */; };
 		AAFDEC2E257A45CF00B0C5AE /* Heroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC2D257A45CF00B0C5AE /* Heroe.swift */; };
 		AAFDEC31257A45DB00B0C5AE /* Villain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC30257A45DB00B0C5AE /* Villain.swift */; };
 		AAFDEC34257A681200B0C5AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC33257A681200B0C5AE /* Constants.swift */; };
@@ -25,6 +25,9 @@
 		AAFDEC5D257AA5BA00B0C5AE /* HeroCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFDEC5C257AA5BA00B0C5AE /* HeroCellView.xib */; };
 		AAFDEC61257AA64A00B0C5AE /* HeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC60257AA64A00B0C5AE /* HeroCellView.swift */; };
 		AAFDEC66257AAC1D00B0C5AE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC65257AAC1D00B0C5AE /* Repository.swift */; };
+		AAFDEC6A257AF34800B0C5AE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC69257AF34800B0C5AE /* Util.swift */; };
+		AAFDEC6F257B001100B0C5AE /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFDEC6E257B001100B0C5AE /* Detail.storyboard */; };
+		AAFDEC72257B028300B0C5AE /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDEC71257B028300B0C5AE /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +39,7 @@
 		AAFDEC12257A3C0800B0C5AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAFDEC15257A3C0800B0C5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAFDEC17257A3C0800B0C5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAFDEC2A257A45C600B0C5AE /* Personaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personaje.swift; sourceTree = "<group>"; };
+		AAFDEC2A257A45C600B0C5AE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		AAFDEC2D257A45CF00B0C5AE /* Heroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroe.swift; sourceTree = "<group>"; };
 		AAFDEC30257A45DB00B0C5AE /* Villain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villain.swift; sourceTree = "<group>"; };
 		AAFDEC33257A681200B0C5AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		AAFDEC5C257AA5BA00B0C5AE /* HeroCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCellView.xib; sourceTree = "<group>"; };
 		AAFDEC60257AA64A00B0C5AE /* HeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellView.swift; sourceTree = "<group>"; };
 		AAFDEC65257AAC1D00B0C5AE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		AAFDEC69257AF34800B0C5AE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		AAFDEC6E257B001100B0C5AE /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		AAFDEC71257B028300B0C5AE /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,7 @@
 		AAFDEC21257A438600B0C5AE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AAFDEC2A257A45C600B0C5AE /* Personaje.swift */,
+				AAFDEC2A257A45C600B0C5AE /* Character.swift */,
 				AAFDEC2D257A45CF00B0C5AE /* Heroe.swift */,
 				AAFDEC30257A45DB00B0C5AE /* Villain.swift */,
 			);
@@ -114,6 +120,7 @@
 		AAFDEC22257A438E00B0C5AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AAFDEC6C257AFFF900B0C5AE /* Detail */,
 				AAFDEC49257A7AAF00B0C5AE /* Villain */,
 				AAFDEC42257A7A0100B0C5AE /* Hero */,
 				AAFDEC38257A6A0100B0C5AE /* Home */,
@@ -125,6 +132,7 @@
 		AAFDEC23257A439A00B0C5AE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AAFDEC6D257B000200B0C5AE /* Detail */,
 				AAFDEC4A257A7AB600B0C5AE /* Villain */,
 				AAFDEC3A257A6A1900B0C5AE /* Hero */,
 				AAFDEC39257A6A1000B0C5AE /* Splash */,
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				AAFDEC33257A681200B0C5AE /* Constants.swift */,
+				AAFDEC69257AF34800B0C5AE /* Util.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -231,6 +240,22 @@
 			path = Local;
 			sourceTree = "<group>";
 		};
+		AAFDEC6C257AFFF900B0C5AE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AAFDEC6E257B001100B0C5AE /* Detail.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		AAFDEC6D257B000200B0C5AE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AAFDEC71257B028300B0C5AE /* DetailVC.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +316,7 @@
 				AAFDEC58257A836B00B0C5AE /* Villain.storyboard in Resources */,
 				AAFDEC16257A3C0800B0C5AE /* LaunchScreen.storyboard in Resources */,
 				AAFDEC13257A3C0800B0C5AE /* Assets.xcassets in Resources */,
+				AAFDEC6F257B001100B0C5AE /* Detail.storyboard in Resources */,
 				AAFDEC5D257AA5BA00B0C5AE /* HeroCellView.xib in Resources */,
 				AAFDEC55257A834C00B0C5AE /* Hero.storyboard in Resources */,
 				AAFDEC11257A3C0700B0C5AE /* Main.storyboard in Resources */,
@@ -307,11 +333,13 @@
 			files = (
 				AAFDEC0E257A3C0700B0C5AE /* SplashVC.swift in Sources */,
 				AAFDEC40257A755500B0C5AE /* HeroVC.swift in Sources */,
+				AAFDEC72257B028300B0C5AE /* DetailVC.swift in Sources */,
 				AAFDEC2E257A45CF00B0C5AE /* Heroe.swift in Sources */,
 				AAFDEC4C257A7AC200B0C5AE /* VillainVC.swift in Sources */,
-				AAFDEC2B257A45C600B0C5AE /* Personaje.swift in Sources */,
+				AAFDEC2B257A45C600B0C5AE /* Character.swift in Sources */,
 				AAFDEC66257AAC1D00B0C5AE /* Repository.swift in Sources */,
 				AAFDEC0A257A3C0700B0C5AE /* AppDelegate.swift in Sources */,
+				AAFDEC6A257AF34800B0C5AE /* Util.swift in Sources */,
 				AAFDEC61257AA64A00B0C5AE /* HeroCellView.swift in Sources */,
 				AAFDEC34257A681200B0C5AE /* Constants.swift in Sources */,
 				AAFDEC0C257A3C0700B0C5AE /* SceneDelegate.swift in Sources */,

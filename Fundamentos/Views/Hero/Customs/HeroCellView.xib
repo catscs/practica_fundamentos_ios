@@ -9,35 +9,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroCellView" rowHeight="257" id="8AP-0F-Voq" customClass="HeroCellView" customModule="Fundamentos" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="498" height="257"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroCellView" rowHeight="80" id="8AP-0F-Voq" customClass="HeroCellView" customModule="Fundamentos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="120"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8AP-0F-Voq" id="JVO-ch-vJI">
-                <rect key="frame" x="0.0" y="0.0" width="498" height="257"/>
+                <rect key="frame" x="0.0" y="0.0" width="484" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="EJO-yT-4bI">
-                        <rect key="frame" x="10" y="30" width="478" height="197"/>
+                        <rect key="frame" x="10" y="10" width="464" height="100"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKG-Sw-m4d">
-                                <rect key="frame" x="0.0" y="0.0" width="388" height="197"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-Ma-wXm">
-                                        <rect key="frame" x="40" y="0.0" width="308" height="197"/>
+                                        <rect key="frame" x="40" y="0.0" width="294" height="100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuM-Gy-3Rb">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="197"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heroe1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuM-Gy-3Rb">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="100"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvF-7H-hgM">
-                                                <rect key="frame" x="266.5" y="0.0" width="41.5" height="197"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espada" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvF-7H-hgM">
+                                                <rect key="frame" x="233.5" y="0.0" width="60.5" height="100"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -48,8 +50,8 @@
                                     <constraint firstItem="kSw-Ma-wXm" firstAttribute="leading" secondItem="bKG-Sw-m4d" secondAttribute="leading" constant="40" id="UwH-dz-Swp"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heroe11_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="pBh-Kq-nPT">
-                                <rect key="frame" x="398" y="0.0" width="80" height="197"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hero10_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="pBh-Kq-nPT">
+                                <rect key="frame" x="384" y="0.0" width="80" height="100"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.058823529409999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="o10-S4-jux"/>
@@ -65,19 +67,21 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="EJO-yT-4bI" secondAttribute="trailing" constant="10" id="DK7-4B-2hH"/>
                     <constraint firstItem="EJO-yT-4bI" firstAttribute="leading" secondItem="JVO-ch-vJI" secondAttribute="leading" constant="10" id="Lj8-Cc-H4t"/>
-                    <constraint firstItem="EJO-yT-4bI" firstAttribute="top" secondItem="JVO-ch-vJI" secondAttribute="top" constant="30" id="moa-uQ-W6Y"/>
-                    <constraint firstAttribute="bottom" secondItem="EJO-yT-4bI" secondAttribute="bottom" constant="30" id="r7n-iQ-iGq"/>
+                    <constraint firstItem="EJO-yT-4bI" firstAttribute="top" secondItem="JVO-ch-vJI" secondAttribute="top" constant="10" id="moa-uQ-W6Y"/>
+                    <constraint firstAttribute="bottom" secondItem="EJO-yT-4bI" secondAttribute="bottom" constant="10" id="r7n-iQ-iGq"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="attackLabel" destination="gvF-7H-hgM" id="IHm-Rb-GwU"/>
                 <outlet property="heroImage" destination="pBh-Kq-nPT" id="eZw-wc-pF3"/>
+                <outlet property="nameLabel" destination="QuM-Gy-3Rb" id="PcC-Wn-rzT"/>
                 <outlet property="viewText" destination="bKG-Sw-m4d" id="ACr-e2-zh6"/>
             </connections>
-            <point key="canvasLocation" x="-10.144927536231885" y="55.245535714285715"/>
+            <point key="canvasLocation" x="-20.289855072463769" y="9.375"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="heroe11_transparent" width="200" height="200"/>
+        <image name="hero10_transparent" width="200" height="200"/>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
